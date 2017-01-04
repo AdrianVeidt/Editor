@@ -1,0 +1,1170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SVGLib</name>
+    </assembly>
+    <members>
+        <member name="T:SVGLib.ErrH">
+            <summary>
+            Summary description for ErrH.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute">
+            <summary>
+            It represents a generic SVG attribute.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgAttribute.#ctor(SVGLib.SvgAttribute._SvgAttribute)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="type">Attribute type.</param>
+        </member>
+        <member name="M:SVGLib.SvgAttribute.GetXML">
+            <summary>
+            It returns the XML string of the SVG attribute.
+            </summary>
+            <returns>
+            An XML string in the format [attributename]="attributevalue"
+            </returns>
+        </member>
+        <member name="P:SVGLib.SvgAttribute.AttributeType">
+            <summary>
+            It returns the attribute type.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgAttribute.AttributeGroup">
+            <summary>
+            It returns the attribute group.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgAttribute.Value">
+            <summary>
+            Gets/sets the attribute value. The type of the object depends on the attribute type.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgAttribute.Name">
+            <summary>
+            It returns the attribute name.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgAttribute.AttributeDataType">
+            <summary>
+            It returns the attribute data type.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgAttribute.AttributeEnumValues">
+            <summary>
+            For datatypeEnum attributes it returns the array of acceptable values (string array).
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgAttribute">
+            <summary>
+            List of the supported SVG attributes.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgAttributeGroup">
+            <summary>
+            List of SVG attribute groups.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgAttributeDataType">
+            <summary>
+            List of SVG attribute data types
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgFillRule">
+            <summary>
+            List of fill rule attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgLineCap">
+            <summary>
+            List of line cap attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgLineJoin">
+            <summary>
+            List of line join attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgColorInterpolation">
+            <summary>
+            List of color interpolation attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgColorRendering">
+            <summary>
+            List of color rendering attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgLengthAdjust">
+            <summary>
+            List of length adjust attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgFontStretch">
+            <summary>
+            List of font stretch attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgGraphicsDisplay">
+            <summary>
+            List of display attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgImageRendering">
+            <summary>
+            List of image rendering attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgPointerEvents">
+            <summary>
+            List of pointer events attribute choices
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgShapeRendering">
+            <summary>
+            List of shape rendering attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgTextRendering">
+            <summary>
+            List of text rendering attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgAttribute._SvgVisibility">
+            <summary>
+            List of visibility attribute choices.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgBasicShape">
+            <summary>
+            Summary description for SvgBasicShape.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgElement">
+            <summary>
+            This is the base class of any Svg element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgElement.getParent">
+            <summary>
+            It returns the parent element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.setParent(SVGLib.SvgElement)">
+            <summary>
+            It sets the parent element.
+            </summary>
+            <param name="ele">New parent element</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.getChild">
+            <summary>
+            It gest the first child element.
+            </summary>
+            <returns>First child element.</returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.setChild(SVGLib.SvgElement)">
+            <summary>
+            It sets the first child element.
+            </summary>
+            <param name="ele">New child.</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.getNext">
+            <summary>
+            It gets the next sibling element.
+            </summary>
+            <returns>Next element.</returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.setNext(SVGLib.SvgElement)">
+            <summary>
+            It sets the next sibling element.
+            </summary>
+            <param name="ele">New next element.</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.getPrevious">
+            <summary>
+            It gets the previous sibling element.
+            </summary>
+            <returns>Previous element.</returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.setPrevious(SVGLib.SvgElement)">
+            <summary>
+            It sets the previous element.
+            </summary>
+            <param name="ele">New previous element.</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.getInternalId">
+            <summary>
+            It gets the internal Id of the element.
+            </summary>
+            <returns>Internal Id.</returns>
+            <remarks>The internal Id is a unique number inside the SVG document.
+            It is assigned when the element is added to the document.</remarks>
+        </member>
+        <member name="M:SVGLib.SvgElement.setInternalId(System.Int32)">
+            <summary>
+            It sets the internal Id of the element.
+            </summary>
+            <param name="nId">New internal Id.</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.getElementName">
+            <summary>
+            It returns the SVG element name.
+            </summary>
+            <returns>SVG name.</returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.getElementValue">
+            <summary>
+            It returns the current element value.
+            </summary>
+            <returns>Element value.</returns>
+            <remarks>Not all SVG elements are supposed to have a value. For instance a rect element or 
+            a circle do not usually have a value while a desc or a text they normally have it.</remarks>
+        </member>
+        <member name="M:SVGLib.SvgElement.setElementValue(System.String)">
+            <summary>
+            Sets the element value.
+            </summary>
+            <param name="sValue">New element value.</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.HasValue">
+            <summary>
+            Flag indicating if a value is expected for the SVG element.
+            </summary>
+            <returns>true if the SVG element has normally a value.</returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.getElementType">
+            <summary>
+            It returns the SVG element type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.GetXML">
+            <summary>
+            It returns the XML string of the SVG tree starting from the element.
+            </summary>
+            <returns>XML string.</returns>
+            <remarks>The method is recursive so it creates the SVG string for the current element and for its
+            sub-tree. If the element is the root of the SVG document the method return the entire SVG XML string.</remarks>
+        </member>
+        <member name="M:SVGLib.SvgElement.GetTagXml">
+            <summary>
+            It returns the XML string of the SVG element.
+            </summary>
+            <returns>XML string.</returns>
+        </member>
+        <member name="M:SVGLib.SvgElement.FillAttributeList(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList)">
+            <summary>
+            It gets all element attributes.
+            </summary>
+            <param name="aType">Attribute type array.</param>
+            <param name="aName">Attribute name array.</param>
+            <param name="aValue">Attribute value array.</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.CloneAttributeList(SVGLib.SvgElement)">
+            <summary>
+            It copies all the attributes of the element eleToClone to the
+            current element.
+            </summary>
+            <param name="eleToClone">Element that has to be cloned.</param>
+        </member>
+        <member name="M:SVGLib.SvgElement.ElementInfo">
+            <summary>
+            It returns a string containing current element info for logging purposes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SVGLib.SvgElement.Id">
+            <summary>
+            Standard XML attribute for assigning a unique name to an element.
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:SVGLib.SvgElement._SvgElementType">
+            <summary>
+            List all SVG element types. For each element a specific class is defined in the library.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.XmlBase">
+            <summary>
+            Specifies a base URI other than the base URI of the document or external entity.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.XmlLang">
+            <summary>
+            Standard XML attribute to specify the language (e.g., English) used in the contents and attribute values of particular elements.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.XmlSpace">
+            <summary>
+            Standard XML attribute to specify whether white space is preserved in character data. The only possible values are default and preserve.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.Class">
+            <summary>
+            This attribute assigns a (CSS) class name or set of class names to an element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.Style">
+            <summary>
+            This attribute specifies style information for the current element. The style attribute specifies style information for a single element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.Color">
+            <summary>
+            It is the explicit color to be used to paint the current object.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.Opacity">
+            <summary>
+            The uniform opacity setting to be applied across an entire object. Any values outside the range 0.0 (fully transparent) to 1.0 (fully opaque) will be clamped to this range.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.Fill">
+            <summary>
+            Paints the interior of the given graphical element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.FillRule">
+            <summary>
+            It indicates the algorithm which is to be used to determine what parts of the canvas are included inside the shape.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.FillOpacity">
+            <summary>
+            It specifies the opacity of the painting operation used to paint the interior the current object.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.Stroke">
+            <summary>
+            Paints along the outline of the given graphical element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.StrokeOpacity">
+            <summary>
+            It specifies the opacity of the painting operation used to stroke the current object.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.StrokeWidth">
+            <summary>
+            The width of the stroke on the current object. If a percentage is used, the value represents a percentage of the current viewport.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SVGLib.SvgBasicShape.StrokeDashArray" -->
+        <member name="P:SVGLib.SvgBasicShape.StrokeDashOffSet">
+            <summary>
+            It specifies the distance into the dash pattern to start the dash.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.StrokeLineCap">
+            <summary>
+            It specifies the shape to be used at the end of open subpaths when they are stroked.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.StrokeLineJoin">
+            <summary>
+            It specifies the shape to be used at the corners of paths or basic shapes when they are stroked.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.StrokeMiterLimit">
+            <summary>
+            When two line segments meet at a sharp angle and miter joins have been specified for 'stroke-linejoin', it is possible for the miter to extend far beyond the thickness of the line stroking the path. The 'stroke-miterlimit' imposes a limit on the ratio of the miter length to the 'stroke-width'. When the limit is exceeded, the join is converted from a miter to a bevel.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.ColorInterpolation">
+            <summary>
+            It specifies the color space for gradient interpolations, color animations and alpha compositing.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.ColorInterpolationFilters">
+            <summary>
+            It specifies the color space for imaging operations performed via filter effects.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.ColorRendering">
+            <summary>
+            It provides a hint to the SVG user agent about how to optimize its color interpolation and compositing operations.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.Display">
+            <summary>
+            It control the visibility of the graphical element.
+            </summary>
+            <remarks>
+            When applied to a container element, setting 'display' to none causes the container and all of its children 
+            to be invisible; thus, it acts on groups of elements as a group. 
+            'visibility', however, only applies to individual graphics elements. Setting 'visibility' to hidden on a 'g' 
+            will make its children invisible as long as the children do not specify their own 'visibility' properties as 
+            visible. Note that 'visibility' is not an inheritable property. 
+            When the 'display' property is set to none, then the given element does not become part of the rendering tree. 
+            With 'visibility' set to hidden, however, processing occurs as if the element were part of the rendering tree 
+            and still taking up space, but not actually rendered onto the canvas.
+            </remarks>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.ImageRendering">
+            <summary>
+            It provides a hint how to make speed vs. quality tradeoffs as it performs image processing.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.ShapeRendering">
+            <summary>
+            It provides a hint about what tradeoffs to make as it renders vector graphics elements such as 'path' elements and basic shapes such as circles and rectangles.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgBasicShape.TextRendering">
+            <summary>
+            It provides a hint to the SVG user agent about how to optimize its color interpolation and compositing operations.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SVGLib.SvgBasicShape.ShapeName" -->
+        <member name="P:SVGLib.SvgBasicShape.Visibility">
+            <summary>
+            It control the visibility of the graphical element.
+            </summary>
+            <remarks>
+            When applied to a container element, setting 'display' to none causes the container and all of its children 
+            to be invisible; thus, it acts on groups of elements as a group. 
+            'visibility', however, only applies to individual graphics elements. Setting 'visibility' to hidden on a 'g' 
+            will make its children invisible as long as the children do not specify their own 'visibility' properties as 
+            visible. Note that 'visibility' is not an inheritable property. 
+            When the 'display' property is set to none, then the given element does not become part of the rendering tree. 
+            With 'visibility' set to hidden, however, processing occurs as if the element were part of the rendering tree 
+            and still taking up space, but not actually rendered onto the canvas.
+            </remarks>
+        </member>
+        <member name="T:SVGLib.SvgCircle">
+            <summary>
+            It represents the circle SVG element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgCircle.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a circle element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgCircle.#ctor(SVGLib.SvgDoc,System.String,System.String,System.String)">
+            <summary>
+            It constructs a circle element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sCX"></param>
+            <param name="sCY"></param>
+            <param name="sRadius"></param>
+        </member>
+        <member name="P:SVGLib.SvgCircle.CX">
+            <summary>
+            The x-axis coordinate of the center of the circle.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgCircle.CY">
+            <summary>
+            The y-axis coordinate of the center of the circle.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgCircle.R">
+            <summary>
+            The radius of the circle.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgDesc">
+            <summary>
+            It represents the desc SVG element.
+            Each container element or graphics element in an SVG drawing can supply 
+            a 'desc' and/or a 'title' description string where the description is text-only.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgDesc.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a desc element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgDesc.#ctor(SVGLib.SvgDoc,System.String)">
+            <summary>
+            It constructs a desc element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sValue"></param>
+        </member>
+        <member name="P:SVGLib.SvgDesc.Value">
+            <summary>
+            The value of the element.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgDoc">
+            <summary>
+            It represents the SVG document.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgDoc.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgDoc.CreateNewDocument">
+            <summary>
+            It creates a new empty SVG document that contains just the root element.
+            If a current document exists, it is destroyed.
+            </summary>
+            <returns>
+            The root element of the SVG document.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.LoadFromFile(System.Xml.XmlTextReader)">
+            <summary>
+            It creates a SVG document reading from a file.
+            If a current document exists, it is destroyed.
+            </summary>
+            <param name="sFilename">The complete path of a valid SVG file.</param>
+            <returns>
+            true if the file is loaded successfully and it is a valid SVG document, false if the file cannot be open or if it is not
+            a valid SVG document.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.SaveToFile(System.String)">
+            <summary>
+            It saves the current SVG document to a file.
+            </summary>
+            <param name="sFilename">The complete path of the file.</param>
+            <returns>
+            true if the file is saved successfully, false otherwise
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.GetXML">
+            <summary>
+            It returns the XML string of the entire SVG document.
+            </summary>
+            <returns>
+            The SVG document. An empty string if the document is empty.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.GetSvgElement(System.Int32)">
+            <summary>
+            It returns the SvgElement with the given internal (numeric) identifier.
+            </summary>
+            <param name="nInternalId">Internal unique identifier of the element.</param>
+            <returns>
+            The SvgElement with the given internal Id. Null if no element can be found.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.GetSvgRoot">
+            <summary>
+            It returns the root element of the SVG document.
+            </summary>
+            <returns>
+            Root element.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.GetSvgElement(System.String)">
+            <summary>
+            It returns the SvgElement with the given XML Id.
+            </summary>
+            <param name="sId">XML identifier of the element.</param>
+            <returns>
+            The SvgElement with the given XML Id. Null if no element can be found.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddElement(SVGLib.SvgElement,SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It adds the new element eleToAdd as the last children of the given parent element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <param name="eleToAdd">Element to be added.</param>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddElement(SVGLib.SvgElement,System.String,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new element according to the element name provided
+            and it adds the new element as the last children of the given parent element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <param name="sName">SVG element name.</param>
+            <returns>The new created element.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.CloneElement(SVGLib.SvgElement,SVGLib.SvgElement,SVGLib.SvgElement)">
+            <summary>
+            It creates a new element copying all attributes from eleToClone; the new
+            element is inserted under the parent element provided. 
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <param name="eleToClone">Element to be cloned</param>
+            <returns></returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddUnsupported(SVGLib.SvgElement,System.String,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Unsupported element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <param name="sName">Name</param>
+            <returns>
+            New element created.
+            </returns>
+            <remarks>
+            The unsupported element is used when during the parsing of a file an unknown
+            element tag is found.
+            </remarks>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddDesc(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Desc element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddGroup(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Group element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddText(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Text element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddRect(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Rect element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddCircle(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Circle element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddEllipse(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Ellipse element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddLine(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Line element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddPath(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Path element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddPolygon(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Polygon element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddPolyline(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Polyline element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.AddImage(SVGLib.SvgElement,SVGLib.SvgElement@)">
+            <summary>
+            It creates a new SVG Image element.
+            </summary>
+            <param name="parent">Parent element. If null the element is added under the root.</param>
+            <returns>New element created.</returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.DeleteElement(SVGLib.SvgElement)">
+            <summary>
+            It deletes an element from the document.
+            </summary>
+            <param name="ele">Element to be deleted.</param>
+            <returns>
+            true if the element has been successfully deleted; false otherwise.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.DeleteElement(System.Int32)">
+            <summary>
+            It deletes an element from the document.
+            </summary>
+            <param name="nInternalId">Internal Id of the element to be deleted.</param>
+            <returns>
+            true if the element has been successfully deleted; false otherwise.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.DeleteElement(System.String)">
+            <summary>
+            It deletes an element from the document.
+            </summary>
+            <param name="sId">XML Id of the element to be deleted.</param>
+            <returns>
+            true if the element has been successfully deleted; false otherwise.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.ElementPositionUp(SVGLib.SvgElement)">
+            <summary>
+            It moves the element before its current previous sibling.
+            </summary>
+            <param name="ele">Element to be moved.</param>
+            <returns>
+            true if the operation succeeded.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.ElementLevelUp(SVGLib.SvgElement)">
+            <summary>
+            It moves the element one level up in the tree hierarchy.
+            </summary>
+            <param name="ele">Element to be moved.</param>
+            <returns>
+            true if the operation succeeded.
+            </returns>
+        </member>
+        <member name="M:SVGLib.SvgDoc.ElementPositionDown(SVGLib.SvgElement)">
+            <summary>
+            It moves the element after its current next sibling.
+            </summary>
+            <param name="ele">Element to be moved.</param>
+            <returns>
+            true if the operation succeeded.
+            </returns>
+        </member>
+        <member name="T:SVGLib.SvgEllipse">
+            <summary>
+            It represents the ellipse SVG element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgEllipse.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs an ellipse element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgEllipse.#ctor(SVGLib.SvgDoc,System.String,System.String,System.String,System.String)">
+            <summary>
+            It constructs an ellipse element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sCX"></param>
+            <param name="sCY"></param>
+            <param name="sRX"></param>
+            <param name="sRY"></param>
+        </member>
+        <member name="P:SVGLib.SvgEllipse.CX">
+            <summary>
+            The x-axis coordinate of the center of the ellipse.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgEllipse.CY">
+            <summary>
+            The y-axis coordinate of the center of the ellipse.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgEllipse.RX">
+            <summary>
+            The x-axis radius of the ellipse.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgEllipse.RY">
+            <summary>
+            The y-axis radius of the ellipse.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgGroup">
+            <summary>
+            It represents the group SVG element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgGroup.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a group element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="T:SVGLib.SvgImage">
+            <summary>
+            It represents the image SVG element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgImage.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs an image element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgImage.#ctor(SVGLib.SvgDoc,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            It constructs an image element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sX"></param>
+            <param name="sY"></param>
+            <param name="sWidth"></param>
+            <param name="sHeight"></param>
+            <param name="sHRef"></param>
+            <param name="doc"></param>
+        </member>
+        <member name="P:SVGLib.SvgImage.X">
+            <summary>
+            The x-axis coordinate of the side of the element which has the smaller x-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgImage.Y">
+            <summary>
+            The y-axis coordinate of the side of the element which has the smaller y-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgImage.Width">
+            <summary>
+            The width of the element. A value of zero disables rendering of the element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgImage.Height">
+            <summary>
+            The height of the element. A value of zero disables rendering of the element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgImage.Class">
+            <summary>
+            This attribute assigns a (CSS) class name or set of class names to an element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgImage.Style">
+            <summary>
+            This attribute specifies style information for the current element. The style attribute specifies style information for a single element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgImage.HRef">
+            <summary>
+            Url of the image file.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgLine">
+            <summary>
+            It represents the line SVG element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgLine.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs an line element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgLine.#ctor(SVGLib.SvgDoc,System.String,System.String,System.String,System.String,System.Drawing.Color)">
+            <summary>
+            It constructs an line element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sX1"></param>
+            <param name="sY1"></param>
+            <param name="sX2"></param>
+            <param name="sY2"></param>
+            <param name="col"></param>
+        </member>
+        <member name="P:SVGLib.SvgLine.X1">
+            <summary>
+            The x-axis coordinate of the start point of the line.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgLine.Y1">
+            <summary>
+            The y-axis coordinate of the start point of the line.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgLine.X2">
+            <summary>
+            The x-axis coordinate of the end point of the line.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgLine.Y2">
+            <summary>
+            The y-axis coordinate of the end point of the line.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgPath">
+            <summary>
+            It represents the path SVG element.
+            Paths represent the outline of a shape which can be filled, stroked, used as a clipping path, or any combination of the three.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgPath.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a path element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgPath.#ctor(SVGLib.SvgDoc,System.String)">
+            <summary>
+            It constructs a path element.
+            </summary>
+            <param name="doc"></param>
+            <param name="sPathData">SVG document.</param>
+        </member>
+        <member name="P:SVGLib.SvgPath.PathData">
+            <summary>
+            The definition of the outline of a shape.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgPath.PathLength">
+            <summary>
+            The author's computation of the total length of the path, in user units.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgPolygon">
+            <summary>
+            It represents the polygon SVG element.
+            The 'polygon' element defines a closed shape consisting of a set of connected straight line segments.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgPolygon.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a polygon element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgPolygon.#ctor(SVGLib.SvgDoc,System.String)">
+            <summary>
+            It constructs a polygon element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sPoints"></param>
+        </member>
+        <member name="P:SVGLib.SvgPolygon.Points">
+            <summary>
+            The points that make up the polygon. All coordinate values are in the user coordinate system.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgPolyline">
+            <summary>
+            It represents the polygon SVG element.
+            The 'polygon' element defines a closed shape consisting of a set of connected straight line segments.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgPolyline.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a polygon element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgPolyline.#ctor(SVGLib.SvgDoc,System.String)">
+            <summary>
+            It constructs a polygon element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sPoints"></param>
+        </member>
+        <member name="P:SVGLib.SvgPolyline.Points">
+            <summary>
+            The points that make up the polygon. All coordinate values are in the user coordinate system.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgRect">
+            <summary>
+            It represents the rect SVG element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgRect.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a rect element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="M:SVGLib.SvgRect.#ctor(SVGLib.SvgDoc,System.String,System.String,System.String,System.String,System.String,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            It constructs a rect element.
+            </summary>
+            <param name="doc">SVG document.</param>
+            <param name="sX"></param>
+            <param name="sY"></param>
+            <param name="sWidth"></param>
+            <param name="sHeight"></param>
+            <param name="sStrokeWidth"></param>
+            <param name="colFill"></param>
+            <param name="colStroke"></param>
+        </member>
+        <member name="P:SVGLib.SvgRect.X">
+            <summary>
+            X-axis coordinate of the side of the element which has the smaller x-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRect.Y">
+            <summary>
+            Y-axis coordinate of the side of the element which has the smaller y-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRect.Width">
+            <summary>
+            Width of the element. A value of zero disables rendering of the element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRect.Height">
+            <summary>
+            Height of the element. A value of zero disables rendering of the element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRect.RX">
+            <summary>
+            For rounded rectangles, the x-axis radius of the ellipse used to round off the corners of the rectangle.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRect.RY">
+            <summary>
+            For rounded rectangles, the y-axis radius of the ellipse used to round off the corners of the rectangle.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgRoot">
+            <summary>
+            It represents the svg SVG element that is the root of the document.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRoot.XmlNs">
+            <summary>
+            Standard XML namespace.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRoot.Version">
+            <summary>
+            Standard XML version.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRoot.Width">
+            <summary>
+            The width of the svg area.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgRoot.Height">
+            <summary>
+            The height of the svg area.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgText">
+            <summary>
+            It represents the text SVG element.
+            </summary>
+        </member>
+        <member name="M:SVGLib.SvgText.#ctor(SVGLib.SvgDoc)">
+            <summary>
+            It constructs a text element with no attribute.
+            </summary>
+            <param name="doc">SVG document.</param>
+        </member>
+        <member name="P:SVGLib.SvgText.XmlBase">
+            <summary>
+            Specifies a base URI other than the base URI of the document or external entity.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.XmlLang">
+            <summary>
+            Standard XML attribute to specify the language (e.g., English) used in the contents and attribute values of particular elements.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.XmlSpace">
+            <summary>
+            Standard XML attribute to specify whether white space is preserved in character data. The only possible values are default and preserve.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Class">
+            <summary>
+            This attribute assigns a (CSS) class name or set of class names to an element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Style">
+            <summary>
+            This attribute specifies style information for the current element. The style attribute specifies style information for a single element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Fill">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Value">
+            <summary>
+            The value of the element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.X">
+            <summary>
+            The x-axis coordinate of the side of the element which has the smaller x-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Y">
+            <summary>
+            The y-axis coordinate of the side of the element which has the smaller y-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.DX">
+            <summary>
+            Shifts in the current text position along the x-axis for the characters within this element or any of its descendants.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.DY">
+            <summary>
+            Shifts in the current text position along the y-axis for the characters within this element or any of its descendants.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Rotate">
+            <summary>
+            The supplemental rotation about the current text position that will be applied to all of the glyphs corresponding to each character within this element.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.TextLength">
+            <summary>
+            The author's computation of the total sum of all of the advance values that correspond to character data within this element, including the advance value on the glyph (horizontal or vertical), the effect of properties 'kerning', 'letter-spacing' and 'word-spacing' and adjustments due to attributes dx and dy on 'tspan' elements. This value is used to calibrate the user agent's own calculations with that of the author.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.LengthAdjust">
+            <summary>
+            Indicates the type of adjustments which the user agent shall make to make the rendered length of the text match the value specified on the textLength attribute.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.FontFamily">
+            <summary>
+            Indicates which font family is to be used to render the text, specified as a prioritized list of font family names and/or generic family names.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.FontSize">
+            <summary>
+            This property refers to the size of the font from baseline to baseline when multiple lines of text are set solid in a multiline layout environment.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.SizeAdjust">
+            <summary>
+            This property allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.FontWeight">
+            <summary>
+            This property indicates the desired amount of condensing or expansion in the glyphs used to render the text.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Stretch">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Width">
+            <summary>
+            The y-axis coordinate of the side of the element which has the smaller y-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="P:SVGLib.SvgText.Height">
+            <summary>
+            The y-axis coordinate of the side of the element which has the smaller y-axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of 0 were specified.
+            </summary>
+        </member>
+        <member name="T:SVGLib.SvgUnsupported">
+            <summary>
+            This class does not represent any SVG element. It is used when parsing an SVG file an
+            unknown element is found.
+            </summary>
+        </member>
+    </members>
+</doc>
