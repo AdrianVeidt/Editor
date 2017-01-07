@@ -138,7 +138,6 @@
 			this.radioButton_pencil.TabIndex = 0;
 			this.radioButton_pencil.TabStop = true;
 			this.radioButton_pencil.UseVisualStyleBackColor = true;
-			this.radioButton_pencil.Visible = false;
 			this.radioButton_pencil.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
 			// 
 			// radioButton_path
@@ -191,7 +190,6 @@
 			this.radioButton_image.TabIndex = 0;
 			this.radioButton_image.TabStop = true;
 			this.radioButton_image.UseVisualStyleBackColor = true;
-			this.radioButton_image.Visible = false;
 			this.radioButton_image.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
 			// 
 			// ToolBox

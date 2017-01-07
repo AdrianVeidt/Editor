@@ -40,3 +40,4 @@ C:\Users\Veidt\Desktop\OOT\Editor\bin\Debug\Crom.Controls.pdb
 C:\Users\Veidt\Desktop\OOT\Editor\bin\Debug\SVGLib.xml
 C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\VectorEditor.exe
 C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\VectorEditor.pdb
+C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\VectorEditor.csprojResolveAssemblyReference.cache
