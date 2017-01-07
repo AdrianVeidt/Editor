@@ -11,7 +11,7 @@ namespace DrawTools
 
         public ToolEllipse()
         {
-            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.Ellipse.cur"));
+            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.Ellipse.cur"));
         }
 
         #endregion Constructors

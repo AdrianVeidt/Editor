@@ -16,8 +16,8 @@ namespace DrawTools
 
         public ToolPan()
         {
-            _openHand = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.pan.cur"));
-            _closedHand = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.pan_close.cur"));
+            _openHand = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.pan.cur"));
+            _closedHand = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.pan_close.cur"));
         }
 
         #endregion Constructors

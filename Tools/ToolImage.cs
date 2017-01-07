@@ -7,7 +7,7 @@ namespace DrawTools
 	{
 		public ToolImage()
 		{
-            Cursor = new Cursor(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.Text.cur"));
+            Cursor = new Cursor(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.Text.cur"));
 		}
 
         public override void OnMouseDown(DrawArea drawArea, MouseEventArgs e)

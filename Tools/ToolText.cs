@@ -13,7 +13,7 @@ namespace DrawTools
 
         public ToolText()
         {
-            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.Text.cur"));
+            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.Text.cur"));
             MinSize = new System.Drawing.Size(40, 20);
         }
 

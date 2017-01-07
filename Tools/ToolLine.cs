@@ -12,7 +12,7 @@ namespace DrawTools
 
         public ToolLine()
         {
-            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.Line.cur"));
+            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.Line.cur"));
         }
 
         #endregion Constructors

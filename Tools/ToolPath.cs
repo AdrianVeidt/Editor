@@ -19,7 +19,7 @@ namespace DrawTools
 
         public ToolPath()
         {
-            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.Pencil.cur"));
+            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.Pencil.cur"));
         }
 
         #endregion Constructors

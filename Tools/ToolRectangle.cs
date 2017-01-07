@@ -11,7 +11,7 @@ namespace DrawTools
 
 		public ToolRectangle()
         {
-            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Resources.Rectangle.cur"));
+            Cursor = new Cursor(Assembly.GetExecutingAssembly().GetManifestResourceStream("VectorEditor.Tools.Resources.Rectangle.cur"));
 		}
 
         public override void OnMouseDown(DrawArea drawArea, MouseEventArgs e)

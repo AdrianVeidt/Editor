@@ -31,7 +31,6 @@ C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\Lyquidity.UtilityLibrary.Controls.Ru
 C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\VectorEditor.UserControls.WorkspaceHolder.resources
 C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\VectorEditor.shapeProperties.resources
 C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\VectorEditor.csproj.GenerateResource.Cache
-C:\Users\Veidt\Desktop\OOT\Editor\obj\Debug\VectorEditor.csprojResolveAssemblyReference.cache
 C:\Users\Veidt\Desktop\OOT\Editor\bin\Debug\VectorEditor.exe
 C:\Users\Veidt\Desktop\OOT\Editor\bin\Debug\VectorEditor.pdb
 C:\Users\Veidt\Desktop\OOT\Editor\bin\Debug\Crom.Controls.dll
